@@ -1,0 +1,39 @@
+Consulta executada no console D1:
+
+SELECT name, type
+FROM sqlite_schema
+WHERE name NOT LIKE 'sqlite_%'
+  AND name NOT LIKE '_cf_%'
+ORDER BY type, name;
+
+Resultado:
+
+name                       | type
+---------------------------+------
+oauth_transactions_expiry  | index
+sessions_expiry            | index
+oauth_transactions         | table
+sessions                   | table
+
+Consulta: SELECT name, type FROM pragma_table_info('oauth_transactions');
+
+name           | type
+---------------+--------
+id_hash        | TEXT
+provider       | TEXT
+state_hash     | TEXT
+nonce          | TEXT
+code_verifier  | TEXT
+expires_at     | INTEGER
+
+Consulta: SELECT name, type FROM pragma_table_info('sessions');
+
+name           | type
+---------------+--------
+id_hash        | TEXT
+issuer         | TEXT
+subject        | TEXT
+email          | TEXT
+display_name   | TEXT
+expires_at     | INTEGER
+created_at     | INTEGER

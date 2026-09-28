@@ -1,0 +1,5 @@
+Homepage URL:
+https://avaliacao2-joaosied.pages.dev
+
+Authorization callback URL:
+https://avaliacao2-joaosied.pages.dev/oauth/callback/github
