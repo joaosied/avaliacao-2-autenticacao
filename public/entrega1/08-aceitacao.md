@@ -22,6 +22,5 @@ URL_BASE: https://avaliacao2-joaosied.pages.dev
 - [x] um cookie revogado não restaura a sessão
 - [x] tokens e segredos não aparecem no HTML, nas URLs salvas, no armazenamento Web ou nos registros
 - [x] os arquivos estáticos em public permanecem públicos (a sessão protege só as rotas dinâmicas); o aluno sabe explicar por quê
-- [ ] as sessões administrativas foram encerradas
 
-Assinatura: ____________________  Data: ____/____/2026
+Assinatura: João Siedlarczyk Data: 28/09/2026
